@@ -20,3 +20,4 @@ loveMsg:
   weather_tem: true
   # 农历信息（默认开启）
   date_lunarInfo: true
+  weather_figure_type: 0
