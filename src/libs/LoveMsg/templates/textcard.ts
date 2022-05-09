@@ -46,7 +46,7 @@ ${weather.windDirDay}：${weather.windScaleDay}级
 湿度：${weather.humidity}\n`
 
   if (weather.precip>0) {
-    description += `可能下雨，记得带伞喔，降雨量：${pcpn}mm\n`
+    description += `可能下雨，记得带伞喔，降雨量：${weather.precip}mm\n`
   }
 //   // 生活指数提示
 //   if (CONFIG.weather_tips && tips) {
