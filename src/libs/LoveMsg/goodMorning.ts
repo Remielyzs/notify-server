@@ -51,7 +51,7 @@ const goodWord = async () => {
 // 天气信息
 const weatherInfo = async () => {
   try {
-    const weather = await API.getWeather(CONFIG.city_name)
+    const weather = await API.getWeather(CONFIG.locationid)
     if (weather) {
       const lunarInfo = await API.getLunarDate(weather.date)
       const template = textCardTemplate({ ...weather, lunarInfo })
