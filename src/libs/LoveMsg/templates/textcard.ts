@@ -42,11 +42,11 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
   description += `\n今日天气状况：
 天气：${weather.textDay}
 ${weather.windDirDay}：${weather.windScaleDay}级
-温度：${weather.tempMin} ~ ${weather.tempMax}
-湿度：${weather.humidity}\n`
+温度：${weather.tempMin}℃ ~ ${weather.tempMax}℃
+湿度：${weather.humidity}%\n`
 
   if (weather.precip>0) {
-    description += `可能下雨，记得带伞喔，降雨量：${weather.precip}mm\n`
+    description += `今天可能下雨，${CONFIG.girl_name}记得带伞喔\n降雨量：${weather.precip}mm\n`
   }
 //   // 生活指数提示
 //   if (CONFIG.weather_tips && tips) {
@@ -54,14 +54,16 @@ ${weather.windDirDay}：${weather.windScaleDay}级
 // ${tips}\n`
 //   }
 
-//   // 最高温度
-//   if (CONFIG.weather_tem && highest && +highest.replace('℃', '') <= 3) {
-//     description += `
-// 哈喽哈喽~这里是来自${CONFIG.boy_name}的爱心提醒哦：
-// 今日最高温度仅为🥶 ${highest}，可冷可冷了~
-// ${CONFIG.girl_name}可要注意保暖哦~\n`
-//   }
-
+  // 最高温度
+  if (weather.tempMax) <= 3) {
+    description += `
+哈喽哈喽~这里是来自${CONFIG.boy_name}的爱心提醒哦：
+今日最高温度仅为🥶 ${weather.tempMax}℃，可冷可冷了~
+${CONFIG.girl_name}可要注意保暖哦~\n`
+  }
+    description += `
+By${CONFIG.boy_name}`
+  }
 //   //   if (air_tips) {
 //   //     description += `
 //   // 出行建议：${air_tips}`
