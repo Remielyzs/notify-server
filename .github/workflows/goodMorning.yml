@@ -53,5 +53,5 @@ jobs:
           WX_APP_ID: ${{ secrets.WX_APP_ID }}
           WX_APP_SECRET: ${{ secrets.WX_APP_SECRET }}
           TIAN_API_KEY: ${{ secrets.TIAN_API_KEY }}
-          HEFENG_APT_KEY: ${{ secrets.HEFENG_API_KEY }}
+          HEFENG_API_KEY: ${{ secrets.HEFENG_API_KEY }}
           MESSAGE_TYPE: goodMorning
