@@ -56,7 +56,8 @@ class API {
   // 天气
   async getWeather(locationid: string): Promise<IWeatherResponseProps> {
     const res = await getTian({ url: LoveMsgURL.weather, params: { location: locationid } })
-    console.log(res)
+    console.log(res.daily)
+    console.log(res.daily[0].textDay)
     return res?.[0]
   }
 
