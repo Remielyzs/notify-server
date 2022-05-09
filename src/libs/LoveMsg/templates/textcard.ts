@@ -55,7 +55,7 @@ ${weather.windDirDay}：${weather.windScaleDay}级
 //   }
 
   // 最高温度
-  if (weather.tempMax) <= 3) {
+  if (weather.tempMax <= 3) {
     description += `
 哈喽哈喽~这里是来自${CONFIG.boy_name}的爱心提醒哦：
 今日最高温度仅为🥶 ${weather.tempMax}℃，可冷可冷了~
