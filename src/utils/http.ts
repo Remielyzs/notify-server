@@ -17,7 +17,7 @@ instance.interceptors.response.use(
     if (res.code === 200)
       return res.newslist
 
-    return undefined
+    return 'dataformaterror'
   },
   (error) => {
     console.log(`err${error}`) // for debug
