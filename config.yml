@@ -8,9 +8,9 @@ loveMsg:
   locationid: 101270608
   city_name: 达州
   # 对女朋友的爱称
-  girl_name: 灿灿
+  girl_name: 小兔几
   # 对自己的称呼
-  boy_name: 我
+  boy_name: 大兔几
   # 点击卡片详情地址
   card_url: https://api.vvhan.com/api/60s
   # 天气生活指数提示（默认开启）
