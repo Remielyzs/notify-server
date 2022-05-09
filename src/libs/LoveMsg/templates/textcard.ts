@@ -19,10 +19,9 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
     weather,
     weather_figure 
   } = data
-  console.log(res.daily)
   // 今日、恋爱天数
 //   const today = `${date.replace('-', '年').replace('-', '月')}日`
-  const dateLength = dayjs(date).diff(CONFIG.start_stamp, 'day')
+//   const dateLength = dayjs(date).diff(CONFIG.start_stamp, 'day')
 
 //   // 拼接内容
 //   let description = `${area} | ${today} | ${week}`
