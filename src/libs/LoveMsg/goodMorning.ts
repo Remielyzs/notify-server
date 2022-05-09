@@ -10,7 +10,7 @@ import { textCardTemplate } from './templates/textcard'
 
 const CONFIG = getConfig().loveMsg
 
-美丽短句
+// 美丽短句
 const goodWord = async () => {
   try {
     // 并行请求，优响相应
