@@ -24,7 +24,8 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
 //   const dateLength = dayjs(date).diff(CONFIG.start_stamp, 'day')
 
 //   // 拼接内容
-  console.log('weather', weathers.0)
+  console.log('text_card_weather', weathers)
+  console.log('text_card_weather', weathers[0])
   let weather = weathers[0]
   let description = ``
 
