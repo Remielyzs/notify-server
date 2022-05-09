@@ -63,7 +63,6 @@ ${CONFIG.girl_name}可要注意保暖哦~\n`
   }
     description += `
 By${CONFIG.boy_name}`
-  }
 //   //   if (air_tips) {
 //   //     description += `
 //   // 出行建议：${air_tips}`
