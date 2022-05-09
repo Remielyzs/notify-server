@@ -52,6 +52,7 @@ const CONFIG = getConfig().loveMsg
 const weatherInfo = async () => {
   try {
     const weather = await API.getWeather(CONFIG.locationid)
+    console.log('weather', weather)
     if (weather) {
       const lunarInfo = await API.getLunarDate(weather.date)
       const template = textCardTemplate({ ...weather, lunarInfo })
