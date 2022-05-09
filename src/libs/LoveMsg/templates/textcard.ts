@@ -16,7 +16,7 @@ const CONFIG = getConfig().loveMsg
 
 export const textCardTemplate = (data: TextCardTemplateProps) => {
   const {
-    weather,
+    weathers,
     weather_figure 
   } = data
   // 今日、恋爱天数
@@ -24,6 +24,7 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
 //   const dateLength = dayjs(date).diff(CONFIG.start_stamp, 'day')
 
 //   // 拼接内容
+  let weather = weathers[0]
   let description = ``
 
 //   if (CONFIG.date_lunarInfo && lunarInfo) {
