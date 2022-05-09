@@ -24,7 +24,7 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
 //   const dateLength = dayjs(date).diff(CONFIG.start_stamp, 'day')
 
 //   // 拼接内容
-//   let description = `${area} | ${today} | ${week}`
+  let description = ``
 
 //   if (CONFIG.date_lunarInfo && lunarInfo) {
 //     const { festival, lunar_festival, jieqi, lubarmonth, lunarday } = lunarInfo
