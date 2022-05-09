@@ -21,7 +21,7 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
   } = data
   // 今日、恋爱天数
 //   const today = `${date.replace('-', '年').replace('-', '月')}日`
-//   const dateLength = dayjs(date).diff(CONFIG.start_stamp, 'day')
+  const dateLength = dayjs(data['0'].fxDate).diff(CONFIG.start_stamp, 'day')
 
 //   // 拼接内容
   let weather = data['0']
@@ -76,7 +76,7 @@ ${weather.windDirDay}：${weather.windScaleDay}级
 //   description += `
 //   [ 点我有惊喜 ] ❤️ 🧡 💛 💚 💖`
 
-//   const title = `这是我们相识的第 ${dateLength} 天`
+  const title = `这是我们相识的第 ${dateLength} 天`
 
   return {
     msgtype: 'textcard',
