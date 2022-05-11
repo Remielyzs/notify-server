@@ -27,4 +27,6 @@ def get_access_token(my):
 if __name__ == '__main__':
     config = get_config()
     envs = get_envs()
+    print(config)
+    print(envs)
     
