@@ -1,4 +1,4 @@
-name: GoodMorning
+name: GoodMorning_py
 on:
   workflow_dispatch:
     branches:
