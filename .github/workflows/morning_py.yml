@@ -1,0 +1,35 @@
+name: GoodMorning
+on:
+  workflow_dispatch:
+    branches:
+      - master
+  schedule:
+    # `分 时 天 月 周` 时按照标准时间 北京时间=标准时间+8 18表示北京时间早上2点
+    - cron: '20 23 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v3
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.x'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
+      # You can test your matrix by printing the current Python version
+      - name: Display Python version
+        run: python -c "import sys; print(sys.version)"
+
+      - name: 运行脚本
+        run: python src/main.py
+        env:
+          WX_COMPANY_ID: ${{ secrets.WX_COMPANY_ID }}
+          WX_APP_ID: ${{ secrets.WX_APP_ID }}
+          WX_APP_SECRET: ${{ secrets.WX_APP_SECRET }}
+          TIAN_API_KEY: ${{ secrets.TIAN_API_KEY }}
+          HEFENG_API_KEY: ${{ secrets.HEFENG_API_KEY }}
+          MESSAGE_TYPE: goodMorning
